@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <!-- <link rel="stylesheet" href="static/css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="{% url 'register' %}"> Register</a></li>
+            <li><a href="{% url 'login' %}">LogIn</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+<div class="container">
+
+    <h1 class="heading">our services</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="{% static 'images/icon-1.png' %}" alt="">
+            <h3>HTML 5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <a href="#" class="btn">Start Learning</a>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/icon-2.png' %}" alt="">
+            <h3>CSS 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <a href="#" class="btn">Start Learning</a>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/icon-3.png' %}" alt="">
+            <h3>JavaScript</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <a href="#" class="btn">Start Learning</a>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/icon-4.png' %}" alt="">
+            <h3>SASS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <a href="#" class="btn">Start Learning</a>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/icon-5.png' %}" alt="">
+            <h3>JQuery</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <a href="#" class="btn">Start Learning</a>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/icon-6.png' %}" alt="">
+            <h3>React.js</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+            <a href="#" class="btn">Start Learning</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
